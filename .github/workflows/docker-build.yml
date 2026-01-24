@@ -38,7 +38,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
-          context: https://github.com/${CLAWDBOT_REPO}.git#master
+          context: https://github.com/${{ env.CLAWDBOT_REPO }}.git#master
           file: Dockerfile
           push: true
           tags: |
