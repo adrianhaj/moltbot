@@ -8,8 +8,8 @@ on:
   workflow_dispatch:
 
 env:
-  DOCKER_IMAGE: heimdall777/clawdbot
-  CLAWDBOT_REPO: clawdbot/clawdbot
+  DOCKER_IMAGE: heimdall777/moltbot
+  CLAWDBOT_REPO: moltbot/clawdbot
 
 jobs:
   build-and-push:
@@ -19,7 +19,7 @@ jobs:
       packages: write
 
     steps:
-      - name: Fetch clawdbot version
+      - name: Fetch moltbot version
         id: version
         run: |
           VERSION=$(curl -s "https://raw.githubusercontent.com/${CLAWDBOT_REPO}/main/package.json" | jq -r '.version')
