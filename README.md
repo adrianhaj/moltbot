@@ -1,6 +1,6 @@
-# clawdbot Docker Image
+# moltbot Docker Image
 
-This repository contains the GitHub Actions workflow to build and publish the [clawdbot](https://github.com/clawdbot/clawdbot) Docker image to Docker Hub.
+This repository contains the GitHub Actions workflow to build and publish the [moltbot](https://github.com/moltbot/clawdbot) Docker image to Docker Hub.
 
 ## Workflow
 
@@ -10,21 +10,21 @@ The GitHub Actions workflow automatically builds and pushes the Docker image whe
 
 ## Image Details
 
-- **Docker Hub**: `heimdall777/clawdbot`
-- **Source**: [clawdbot/clawdbot](https://github.com/clawdbot/clawdbot)
+- **Docker Hub**: `heimdall777/moltbot`
+- **Source**: [moltbot/clawdbot](https://github.com/moltbot/clawdbot)
 - **Base Image**: `node:22-bookworm`
 
 ## Tags
 
-Images are tagged with the clawdbot version from `package.json`:
-- `heimdall777/clawdbot:<version>` (e.g., `heimdall777/clawdbot:2026.1.23`)
-- `heimdall777/clawdbot:latest` (always points to the most recent version)
+Images are tagged with the moltbot version from `package.json`:
+- `heimdall777/moltbot:<version>` (e.g., `heimdall777/clawdbot:2026.1.23`)
+- `heimdall777/moltbot:latest` (always points to the most recent version)
 
 ## Usage
 
 ```bash
-docker pull heimdall777/clawdbot:latest
-docker run heimdall777/clawdbot:latest
+docker pull heimdall777/moltbot:latest
+docker run heimdall777/moltbot:latest
 ```
 
 ## Secrets
