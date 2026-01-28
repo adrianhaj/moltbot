@@ -1,6 +1,6 @@
 # moltbot Docker Image
 
-This repository contains the GitHub Actions workflow to build and publish the [moltbot](https://github.com/moltbot/clawdbot) Docker image to Docker Hub.
+This repository contains the GitHub Actions workflow to build and publish the [moltbot](https://github.com/moltbot/moltbot) Docker image to Docker Hub.
 
 ## Workflow
 
@@ -11,7 +11,7 @@ The GitHub Actions workflow automatically builds and pushes the Docker image whe
 ## Image Details
 
 - **Docker Hub**: `heimdall777/moltbot`
-- **Source**: [moltbot/clawdbot](https://github.com/moltbot/clawdbot)
+- **Source**: [moltbot/clawdbot](https://github.com/moltbot/moltbot)
 - **Base Image**: `node:22-bookworm`
 
 ## Tags
