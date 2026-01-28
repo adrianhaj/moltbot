@@ -9,7 +9,7 @@ on:
 
 env:
   DOCKER_IMAGE: heimdall777/moltbot
-  CLAWDBOT_REPO: moltbot/clawdbot
+  CLAWDBOT_REPO: moltbot/moltbot
 
 jobs:
   build-and-push:
