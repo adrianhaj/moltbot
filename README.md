@@ -1,6 +1,6 @@
 # moltbot Docker Image
 
-This repository contains the GitHub Actions workflow to build and publish the [moltbot](https://github.com/moltbot/moltbot) Docker image to Docker Hub.
+This repository contains the GitHub Actions workflow to build and publish the [moltbot](https://github.com/openclaw/openclaw) Docker image to Docker Hub.
 
 ## Workflow
 
@@ -10,21 +10,21 @@ The GitHub Actions workflow automatically builds and pushes the Docker image whe
 
 ## Image Details
 
-- **Docker Hub**: `heimdall777/moltbot`
-- **Source**: [moltbot/clawdbot](https://github.com/moltbot/moltbot)
+- **Docker Hub**: `heimdall777/openclaw`
+- **Source**: [moltbot/clawdbot](https://github.com/openclaw/openclaw)
 - **Base Image**: `node:22-bookworm`
 
 ## Tags
 
 Images are tagged with the moltbot version from `package.json`:
-- `heimdall777/moltbot:<version>` (e.g., `heimdall777/clawdbot:2026.1.23`)
-- `heimdall777/moltbot:latest` (always points to the most recent version)
+- `heimdall777/openclaw:<version>` (e.g., `heimdall777/openclaw:2026.1.23`)
+- `heimdall777/openclaw:latest` (always points to the most recent version)
 
 ## Usage
 
 ```bash
-docker pull heimdall777/moltbot:latest
-docker run heimdall777/moltbot:latest
+docker pull heimdall777/openclaw:latest
+docker run heimdall777/openclaw:latest
 ```
 
 ## Secrets
