@@ -8,9 +8,9 @@ on:
   workflow_dispatch:
 
 env:
-  DOCKER_IMAGE: heimdall777/moltbot
-  CLAWDBOT_REPO: moltbot/moltbot
-
+  DOCKER_IMAGE: heimdall777/openclaw
+  CLAWDBOT_REPO: openclaw/openclaw
+  
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
@@ -19,7 +19,7 @@ jobs:
       packages: write
 
     steps:
-      - name: Fetch moltbot version
+      - name: Fetch openclaw version
         id: version
         run: |
           VERSION=$(curl -s "https://raw.githubusercontent.com/${CLAWDBOT_REPO}/main/package.json" | jq -r '.version')
